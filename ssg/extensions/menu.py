@@ -18,6 +18,6 @@ def generate_menu(html, ext):
 
     menu = "\n".join([menu_item(path.stem, ext) for path in files])
 
-    return "<ul>\n{}<ul>\n{}".format(menu, html)
+    return "<ul>\n{}</ul>\n{}".format(menu, html)
 
 
