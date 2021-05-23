@@ -15,10 +15,9 @@ def event(hook, *args):
 
 
 def filter(hook, value, *args):
-    for order in sorted(_callback.get(hook, {}))
+    for order in sorted(_callback.get(hook, {})):
         for func in _callback[hook][order]:
             value = func(value, *args)
-
     return value
 
 
